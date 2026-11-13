@@ -1,0 +1,37 @@
+:root{--fondo:#fffaf3;--tinta:#1d1a16;--suave:#5f574e;--acento:#c2410c;--linea:#efe3d3;--oscuro:#1d1a16}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.env{max-width:980px;margin:0 auto;padding:0 20px}
+a{color:var(--acento)}
+a:focus-visible,summary:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
+.hero{background:var(--oscuro);color:#fff7ec;padding:48px 0 52px}
+.marca{margin:0 0 18px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:14px;color:#fdba74}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(32px,7vw,56px);line-height:1.08;margin:0 0 16px;max-width:18ch}
+.lead{font-size:19px;max-width:62ch;margin:0 0 26px;color:#f3e7d8}
+.acciones{display:flex;flex-wrap:wrap;gap:10px;margin:0}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;background:var(--acento);color:#fff;text-decoration:none;font-weight:700;border:2px solid var(--acento)}
+.btn.sec{background:transparent;color:#fff7ec;border-color:#fff7ec}
+main section{padding:34px 0 6px}
+h2{font-family:Georgia,serif;font-size:30px;margin:0 0 14px}
+.tarjetas{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.tarjeta{display:flex;flex-direction:column;gap:4px;padding:20px;border-radius:16px;text-decoration:none;color:#fff;min-height:150px;justify-content:flex-end}
+.tarjeta strong{font-family:Georgia,serif;font-size:24px}
+.tarjeta .etq{font-size:13px;text-transform:uppercase;letter-spacing:.1em;opacity:.85}
+.t-bar{background:#2b1d16}.t-pelu{background:#5c1f3e}.t-fisio{background:#124444}
+.tarjeta:hover strong{text-decoration:underline}
+.check{padding-left:1.2em}.check li{margin:6px 0}
+.planes{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.plan{background:#fff;border:1px solid var(--linea);border-radius:16px;padding:22px}
+.plan.destacado{border:2px solid var(--acento)}
+.plan h3{margin:0}
+.cifra{font-size:44px;font-weight:800;margin:4px 0 0;line-height:1.1}
+.cifra small{font-size:20px;font-weight:600}
+.nota{margin:0 0 10px;color:var(--suave);font-size:15px}
+.sin{font-weight:700}
+.pasos li{margin:8px 0}
+details{background:#fff;border:1px solid var(--linea);border-radius:12px;padding:12px 16px;margin:8px 0}
+summary{cursor:pointer;font-weight:700}
+.contacto p{font-size:19px}
+.pie{padding:30px 20px 44px;color:var(--suave);font-size:14px}
+.btn.sec-claro{background:#fff;color:var(--acento)}

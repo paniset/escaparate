@@ -1,0 +1,37 @@
+:root{--fondo:#fbf7f2;--tinta:#1f1a17;--suave:#6b5f57;--acento:#b4441f;--acento-txt:#fff;--tarjeta:#fff;--linea:#eadfd4;--hero:#2b1d16;--hero-txt:#fbf1e6;--radio:14px}
+.s-belleza{--fondo:#faf6f8;--acento:#8a2e5c;--linea:#ecdde5;--hero:#2a1622;--hero-txt:#fbeef5}
+.s-salud{--fondo:#f4f8f8;--acento:#1d6b6b;--linea:#d5e6e6;--hero:#123636;--hero-txt:#e9f6f6}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.envoltura{max-width:960px;margin:0 auto;padding:0 20px}
+a{color:var(--acento)}
+.aviso{margin:0;padding:10px 20px;background:#fff3c4;color:#4a3b00;font-size:15px;text-align:center}
+.aviso a{color:#4a3b00;font-weight:700}
+.hero{background:var(--hero);color:var(--hero-txt);padding:56px 0 44px}
+.kicker{margin:0 0 6px;text-transform:uppercase;letter-spacing:.12em;font-size:13px;opacity:.8}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(34px,8vw,58px);line-height:1.05;margin:0 0 10px;overflow-wrap:anywhere}
+.eslogan{font-size:20px;margin:0 0 24px;opacity:.92}
+.acciones{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:13px 20px;border-radius:999px;background:var(--acento);color:var(--acento-txt);text-decoration:none;font-weight:700;border:2px solid var(--acento)}
+.btn-sec{background:transparent;color:var(--hero-txt);border-color:currentColor}
+.btn small{font-weight:400}
+.btn:focus-visible,a:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
+main{padding:32px 20px 8px}
+h2{font-family:Georgia,serif;font-size:28px;margin:8px 0 16px}
+h3{margin:0 0 10px;font-size:19px}
+.intro p{font-size:19px;color:var(--suave);max-width:60ch}
+.rejilla{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.bloque{background:var(--tarjeta);border:1px solid var(--linea);border-radius:var(--radio);padding:20px}
+.lista{list-style:none;margin:0;padding:0}
+.lista li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed var(--linea)}
+.lista li:last-child{border-bottom:0}
+.item{display:flex;flex-direction:column;min-width:0}
+.item small{color:var(--suave)}
+.precio{font-weight:700;white-space:nowrap}
+.contacto{margin:28px 0}
+.horario{border-collapse:collapse;width:100%;max-width:480px}
+.horario th,.horario td{text-align:left;padding:7px 0;border-bottom:1px solid var(--linea)}
+.horario th{font-weight:600;padding-right:16px}
+.pie{padding:24px 20px 40px;color:var(--suave);font-size:14px}
+@media print{.aviso,.acciones,.pie{display:none}.hero{background:none;color:#000;padding:0}}
